@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image"
+
 export type Drink = {
     name: string,
     region: string,
@@ -19,4 +21,9 @@ export type LaurelType = {
     name: string,
     year: string [],
     description: string
+}
+
+export type ImageInfo = {
+    source: StaticImageData,
+    name: string
 }

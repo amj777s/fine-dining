@@ -1,4 +1,12 @@
-import { Cocktail, Drink, LaurelType } from "./types";
+import { Cocktail, Drink, ImageInfo, LaurelType } from "./types";
+
+import apricotSoup from '../../public/images/apricotSoup.jpg';
+import beefWellington from '../../public/images/beefWellington.jpg';
+import chickenSalad from '../../public/images/chickenSalad.jpg';
+import goldenPotato from '../../public/images/goldenPotato.jpg';
+import salmonRice from '../../public/images/salmonRice.jpg';
+import scallop from '../../public/images/scallop.jpg';
+import steak from '../../public/images/steakAndBroc.jpg';
 
 export const drinks: Drink [] = [
     {
@@ -83,4 +91,35 @@ export const laurels: LaurelType [] = [
         description: "A snapshot of some of the best destinations for unique culinary experiences, in addition to being a barometer for global gastronomic trends."
     }
     
+]
+
+export const images: ImageInfo [] = [
+    {
+        name: "Apricot Soup",
+        source: apricotSoup
+    },
+    {
+        name: "Beef Wellington",
+        source: beefWellington
+    },
+    {
+        name: "Chicken Salad",
+        source: chickenSalad
+    },
+    {
+        name: "Golden Potato",
+        source: goldenPotato
+    },
+    {
+        name: "Salmon with Rice",
+        source: salmonRice
+    },
+    {
+        name: "Scallops",
+        source: scallop
+    },
+    {
+        name: "Steak and Broccolli",
+        source: steak
+    } 
 ]

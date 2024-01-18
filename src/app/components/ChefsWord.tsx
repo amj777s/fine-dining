@@ -21,7 +21,7 @@ export default function ChefsWord(){
                     src={chef} 
                     alt="plating of a fancy dish" 
                     sizes="100vw" 
-                    className="w-4/5 h-auto ml-auto mr-auto md:mr-0 z-10 relative p-3" />
+                    className="w-4/5 max-w-96 h-auto ml-auto mr-auto md:mr-0 z-10 relative p-3" />
                 
                 {/* Left and Right must be half of remaining width on image */}
                 <div className="absolute w-1/2 h-1/2 top-0 left-1/10 md:left-1/5 bg-yellow-100"></div> 
