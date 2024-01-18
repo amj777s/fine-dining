@@ -14,7 +14,8 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'knife': "url('../../public/images/knife.png')",
         'drink': "url('../../public/images/drink.png')",
-        'chef': "url('../../public/images/chef.png')"
+        'chef': "url('../../public/images/chef.png')",
+        'award': "url('../../public/images/awardImage.jpg')"
       },
       spacing: {
         '1/10': "10%",

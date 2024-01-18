@@ -10,7 +10,7 @@ export default function Jumbotron() {
                 <p className="font-semibold">Chase The New Flavor</p>
                 <FaSpoon className="mb-3" />
                 <h2 className=" mb-3 text-5xl leading-relaxed text-yellow-400">THE KEY TO FINE DINING</h2>
-                <p className="mb-3 italic">"Fine dining is an experience, an art form. It's not just about eating; 
+                <p className="mb-3 italic first-letter:text-5xl first-line:uppercase">"Fine dining is an experience, an art form. It's not just about eating; 
                 it's about the ambiance, the service, and the entire sensory journey. 
                 When done right, it's a celebration of food and life itself."</p>
                 <button  className="transition-colors duration-700 w-1/2 max-w-60 m-auto mb-3 rounded-sm border-4  border-slate-100 hover:border-yellow-400">Explore Menu</button>

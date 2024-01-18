@@ -14,3 +14,9 @@ export type Cocktail = {
 export function isCocktail(drink: Drink | Cocktail): drink is Cocktail {
     return (drink as Cocktail).ingredients !== undefined
 }
+
+export type LaurelType = {
+    name: string,
+    year: string [],
+    description: string
+}

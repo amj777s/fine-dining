@@ -1,4 +1,4 @@
-import { Cocktail, Drink } from "./types";
+import { Cocktail, Drink, LaurelType } from "./types";
 
 export const drinks: Drink [] = [
     {
@@ -60,3 +60,27 @@ export const cocktails: Cocktail [] = [
         price: 26
     }
 ];
+
+export const laurels: LaurelType [] = [
+    {
+        name: "Michelin Star",
+        year: ["2022", "2021"],
+        description: "Coveted by many chefs, but bestowed upon only an excellent few. Getting a star (or three) could change the fate of a restaurant."
+    },
+    {
+        name: "James Beard Award",
+        year: ["2019"],
+        description: "Outstanding Restauran, Rising Star Chef of the Year"
+    },
+    {
+        name: "Bib Gourmand Award",
+        year: ["2019"],
+        description: "Highlighted restaurants offering good food at moderate prices"
+    },
+    {
+        name: "The World's 50 Best Restaurants",
+        year: ["2023"],
+        description: "A snapshot of some of the best destinations for unique culinary experiences, in addition to being a barometer for global gastronomic trends."
+    }
+    
+]

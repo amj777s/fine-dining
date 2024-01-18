@@ -3,8 +3,9 @@ import Jumbotron from "./components/Jumbotron"
 import NavBar from "./components/NavBar"
 import History from "./components/History"
 import Specials from "./components/Specials"
-import { cocktails, drinks } from "./drinks"
+import { cocktails, drinks, laurels } from "./data"
 import ChefsWord from "./components/ChefsWord"
+import Laurels from "./components/Laurels"
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <History />
       <Specials cocktails={cocktails} drinks={drinks} />
       <ChefsWord />
+      <Laurels laurels={laurels} />
     </div>
   )
 }
