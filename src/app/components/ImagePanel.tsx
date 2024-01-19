@@ -13,6 +13,16 @@ export default function ImagePanel({
     const [index, setIndex] = useState<number>(0);
     const imagesRef = useRef(new Map<number, HTMLImageElement>());
 
+    const dotIndicators = [];
+    
+    for (let dotIndex = 0; dotIndex < images.length; dotIndex++) {
+        
+        const dotColor = dotIndex === index? 'bg-yellow-400' :'bg-slate-400';
+        const dot = <div key={"dot" + dotIndex} className={`rounded-full w-3 h-3  opacity-50 ${dotColor}`}></div>;
+        dotIndicators.push(dot);
+        
+    };
+
     const ScrollNextImage = (direction: string) => {
 
         switch (direction) {
@@ -55,8 +65,8 @@ export default function ImagePanel({
 
 
     return (
-        <div className="relative w-full md:w-9/20">
-            <div className="w-full whitespace-nowrap overflow-hidden">
+        <div className=" w-full md:w-9/20">
+            <div className="w-full whitespace-nowrap  overflow-hidden">
                 {images.map((image, index) => {
                     return (
                         <Image
@@ -78,8 +88,12 @@ export default function ImagePanel({
                     )
                 })}
             </div>
-            <FaArrowLeft className=" absolute left-5 bottom-5 text-4xl opacity-50 whitespace-normal" onClick={() => ScrollNextImage('backward')} />
-            <FaArrowRight className=" absolute right-5 bottom-5 text-4xl opacity-50" onClick={() => ScrollNextImage('forward')} />     
+            <div className="flex items-center justify-center gap-5 2xl:-mt-5">
+                <FaArrowLeft  className="text-4xl opacity-50 whitespace-normal" onClick={() => ScrollNextImage('backward')} />
+                {dotIndicators.map(dot => dot)}
+                <FaArrowRight className="text-4xl opacity-50" onClick={() => ScrollNextImage('forward')} />   
+                </div>
+ 
         </div>
     )
 }
