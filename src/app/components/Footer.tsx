@@ -1,8 +1,15 @@
+'use client'
+import { useRef } from "react";
+import { useIsVisible } from "../hooks";
 
 export default function Footer() {
+    const footerRef = useRef(null);
+    const isVisible = useIsVisible(footerRef);
+
+    const animation = isVisible? 'opacity-100 scale-100': 'opacity-0 scale-50';
    
     return (
-        <footer className=" w-full flex flex-wrap ">
+        <footer ref={footerRef} className={` w-full flex flex-wrap mb-10 transition duration-1000 ${animation} `}>
             
                 <div className="w-full md:w-1/2 lg:w-1/3  mb-3 lg:mb-0 lg:order-1 flex flex-col items-center">
                     <h3 className=" text-2xl text-yellow-100">Contact Us</h3>

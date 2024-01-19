@@ -1,10 +1,19 @@
+'use client'
+import { useRef } from "react";
+import { useIsVisible } from "../hooks";
 import { FaSpoon } from "react-icons/fa6";
 import chef from '../../../public/images/chef.jpg';
 import Image from "next/image";
 
 export default function ChefsWord(){
+
+    const chefRef = useRef(null);
+    const isVisible = useIsVisible(chefRef);
+
+    const animation = isVisible? 'opacity-100 scale-100': 'opacity-0 scale-50';
+
     return (
-        <div className="flex flex-wrap justify-between items-center w-full">
+        <div ref={chefRef} className={`flex flex-wrap justify-between items-center w-full transition duration-1000 ${animation}`}>
             <div className="flex flex-col w-full md:w-9/20">
                 <h3 className="font-semibold text-center md:text-left">Chef's Word</h3>
                 <FaSpoon className="mb-3 self-center md:self-start" />

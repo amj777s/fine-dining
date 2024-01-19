@@ -1,10 +1,19 @@
+'use client'
+
 import { FaSpoon } from "react-icons/fa6";
 import Image from "next/image";
 import contact from '../../../public/images/contactImage.jpg';
+import { useRef } from "react";
+import { useIsVisible } from "../hooks";
 
 export default function ContactInfo(){
+    const contactRef = useRef(null);
+    const isVisible = useIsVisible(contactRef);
+
+    const animation = isVisible? 'opacity-100 scale-100': 'opacity-0 scale-50';
+    
     return (
-        <div className="w-full flex flex-wrap justify-between items-center">
+        <div ref={contactRef} className={`w-full flex flex-wrap justify-between items-center transition duration-1000 ${animation}`}>
             <div className="flex flex-col items-center md:items-start w-full md:w-9/20 mb-3 md:mb-0">
                 <h3 className="font-bold ">Contact</h3>
                 <FaSpoon className="mb-3 " />

@@ -1,6 +1,9 @@
+'use client'
 import { LaurelType } from "../types";
 import Laurel from "./Laurel";
 import { FaSpoon } from "react-icons/fa6";
+import { useRef } from "react";
+import { useIsVisible } from "../hooks";
 import Image from "next/image";
 import award from "../../../public/images/awardImage.jpg";
 
@@ -9,8 +12,13 @@ export default function Laurels({
 }:{
     laurels: LaurelType []
 }){ 
+    const laurelsRef = useRef(null);
+    const isVisible = useIsVisible(laurelsRef);
+
+    const animation = isVisible? 'opacity-100 scale-100': 'opacity-0 scale-50';
+    
     return (
-        <div className="flex flex-wrap items-center justify-between w-full ">
+        <div ref={laurelsRef} className={`flex flex-wrap items-center justify-between w-full transition duration-1000 ${animation}`}>
             <div className="w-full md:w-9/20">
                 <h3 className="font-semibold text-center md:text-left">Awards & Recognition</h3>
                 <FaSpoon className="mb-3 ml-auto mr-auto md:ml-0"/>

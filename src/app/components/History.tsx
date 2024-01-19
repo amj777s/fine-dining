@@ -1,9 +1,17 @@
-import Image from "next/image";
+'use client'
+import { useRef } from "react";
+import { useIsVisible } from "../hooks";
 import { FaSpoon } from "react-icons/fa6";
-import knife from '../../../public/images/knife.png';
+
 export default function History() {
+
+    const historyRef = useRef(null);
+    const isVisible = useIsVisible(historyRef);
+
+    const animations = isVisible? 'opacity-100 scale-100': 'opacity-0 scale-50';
+
     return (
-        <div className="flex justify-between items-center flex-wrap w-full">
+        <div ref={historyRef} className={`flex justify-between items-center flex-wrap w-full transition duration-1000 ${animations}`}>
             <div className="flex flex-col text-center md:text-left w-full md:w-1/3 md:h-full mb-6 md:mb-0">
                 <h2 className="text-4xl text-yellow-400 md:text-right">About Us</h2>
                 <FaSpoon className="mb-3 self-center md:self-end" />
@@ -28,4 +36,3 @@ export default function History() {
         </div>
     )
 }
-

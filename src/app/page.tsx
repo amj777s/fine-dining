@@ -12,8 +12,9 @@ import Footer from "./components/Footer"
 import Newsletter from "./components/Newsletter"
 
 export default function Home() {
+  
   return (
-    <div className=" scrollbar overflow-y-auto flex flex-col gap-96 w-full h-full p-2 bg-black">
+    <div className=" scrollbar overflow-y-auto flex flex-col gap-96 w-full h-full p-3 bg-black">
       <NavBar />
       <Jumbotron />
       <History />

@@ -1,4 +1,6 @@
 'use client'
+import { useRef } from "react";
+import { useIsVisible } from "../hooks";
 import { useState } from "react";
 import { FaSpoon } from "react-icons/fa6";
 
@@ -22,8 +24,13 @@ export default function Newsletter() {
 
     const subscribeInfo = submitted ? subscribed : subscribeButton;
 
+    const newsRef = useRef(null);
+    const isVisible = useIsVisible(newsRef);
+
+    const animation = isVisible? 'opacity-100 scale-100': 'opacity-0 scale-50';
+
     return (
-        <div className="w-full max-w-2xl m-auto flex flex-col items-center justify-center p-3 border-2 border-yellow-100">
+        <div ref={newsRef} className={`w-full max-w-2xl m-auto flex flex-col items-center justify-center p-3 border-2 border-yellow-100 transition duration-1000 ${animation}`}>
             <h2 className="font-bold">Newsletter</h2>
             <FaSpoon className="mb-3" />
             <h3 className="mb-3 text-5xl leading-relaxed text-yellow-400 text-center">Subscribe To Our Newsletter</h3>
