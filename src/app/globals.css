@@ -2,11 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: grey #000;
+    scroll-behavior: auto;
+   
+  }
+
+
+  /* For Chrome, EDGE, Opera, Others */
+  .scrollbar::-webkit-scrollbar {
+    width: 6px;
+    scrollbar-gutter: stable;
+    
+  }
+  
+  .scrollbar::-webkit-scrollbar-track { 
+    background: none; 
+  }
+  
+  .scrollbar::-webkit-scrollbar-thumb { 
+    background: grey;
+    border-radius: 6px;
+  }
+
+  .scrollbar::-webkit-scrollbar:hover {
+    background: #000;
+  }
+  .scrollbar::-webkit-scrollbar-corner{
+    background-color: none;
+  }
+
+  
+}
+
 
 
 *{
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 0;
   padding: 0;
 

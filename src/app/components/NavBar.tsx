@@ -24,7 +24,7 @@ export default function NavBar() {
     }
 
     return (
-        <nav className="w-full flex items-center justify-between">
+        <nav className="w-full flex  mb-10 items-center justify-between">
             <h2 className="text-2xl font-semibold tracking-widest">GERICHT</h2>
             <div className="hidden sm:flex gap-3">
                 <Link href='/' className=" transition-colors duration-500 hover:text-yellow-400">Home</Link>
@@ -33,7 +33,7 @@ export default function NavBar() {
                 <Link href='/rewards' className=" transition-colors duration-500 hover:text-yellow-400">Rewards</Link>
             </div>
             <MdMenu className=" sm:hidden text-4xl" onClick={toggleDropMenu} />
-            <div className={`${optionsDisplay} text-4xl z-50 fixed w-full h-full top-0 left-0 bg-slate-900`}>
+            <div className={`${optionsDisplay} text-4xl z-50 fixed w-full h-full top-0 left-0 bg-black`}>
                 <MdOutlineRestaurantMenu className=" float-right mt-2 mr-2" onClick={toggleDropMenu} />
                 <Link className="block ml-2 mt-2 mb-2" href='/'>Home</Link>
                 <Link className="block ml-2 mb-2" href='/about'>About</Link>

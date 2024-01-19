@@ -24,6 +24,7 @@ export default function ImagePanel({
                     const nextNode = imagesRef.current.get(index + 1);
                     nextNode?.scrollIntoView({
                         behavior: 'smooth',
+                        block: 'center',
                         inline: 'center'
                     });
                     setIndex(index + 1);
@@ -38,6 +39,7 @@ export default function ImagePanel({
                     const nextNode = imagesRef.current.get(index - 1);
                     nextNode?.scrollIntoView({
                         behavior: 'smooth',
+                        block: 'center',
                         inline: 'center'
                     });
                     setIndex(index - 1);
