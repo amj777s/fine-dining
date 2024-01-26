@@ -1,6 +1,7 @@
 
 import { FaSpoon } from "react-icons/fa6";
 import Image from "next/image";
+import Link from "next/link";
 import dish from '../../../public/images/jumbotronPic.jpg';
 
 export default function Jumbotron() {
@@ -13,7 +14,7 @@ export default function Jumbotron() {
                 <p className="mb-3 italic first-letter:text-5xl first-line:uppercase">"Fine dining is an experience, an art form. It's not just about eating; 
                 it's about the ambiance, the service, and the entire sensory journey. 
                 When done right, it's a celebration of food and life itself."</p>
-                <button  className="transition-colors duration-700 w-1/2 max-w-60 m-auto mb-3 rounded-sm border-4  border-slate-100 hover:border-yellow-400">Explore Menu</button>
+                <Link href='/menu' className="transition-colors duration-700 w-1/2 max-w-60 m-auto mb-3 text-center rounded-sm border-4  border-slate-100 hover:border-yellow-400">Explore Menu</Link>
             </div>
             
             <div className="relative w-full md:w-9/20">

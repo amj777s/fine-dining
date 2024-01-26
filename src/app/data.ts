@@ -1,4 +1,4 @@
-import { Cocktail, Drink, ImageInfo, LaurelType } from "./types";
+import { Cocktail, Drink, ImageInfo, LaurelType, MenuItem } from "./types";
 
 import apricotSoup from '../../public/images/apricotSoup.jpg';
 import beefWellington from '../../public/images/beefWellington.jpg';
@@ -122,4 +122,254 @@ export const images: ImageInfo [] = [
         name: "Steak and Broccolli",
         source: steak
     } 
+]
+
+export const lunchSoupsSalads: MenuItem [] = [
+    {
+        title: "Warm Duck Salad",
+        description: "Grilled duck medallions, spiced pecans, bleu cheese crumbles, dried cranberries, spinach, rosemary raspberry vinaigrette"
+    },
+    {
+        title: "Sensation Athens Salad",
+        description: "Fresh greens, roasted sweet peppers, kalamata olives, tomatoes, feta cheese, sensation dressing"
+    },
+    {
+        title: "Steakhouse Combo",
+        description: "Chargrilled 8 oz. barrel cut filet mignon, served with our signature 'BLT' bleu cheese lettuce wedge"
+    },
+    {
+        title: "Turkey Cobb Salad",
+        description: "Shaved turkey, applewood smoked bacon, avocado, mixed greens, tomatoes, cheddar & bleu cheeses, choice of dressing"
+    },
+    {
+        title: "Ahi Tuna Salad",
+        description: "Sesame crusted & seared rare, mixed greens & spinach, seaweed salad, cucumber, wasabi-cilantro dressing"
+    }
+];
+
+export const lunchHandhelds: MenuItem [] = [
+    {
+        title: "The Spanish Town Cuban",
+        description: "Smoked Spanish paprika & chilli roasted pork, ham, pickles, Swiss, roasted garlic-dijonaise on pressed on French loaf"
+    },
+    {
+        title: "Boulevard Burger",
+        description: "Twin patties of brisket & chuck blend, brioche bun, lettuce, tomato, and pickles on side. Add cheese and/or bacon. Choice of steak fries or sweet potato fries with any sandwich"
+    },
+    {
+        title: "Audubon Turkey Club",
+        description: "Sliced turkey, Swiss, lettuce, tomato, apple smoked bacon, avocado crema on wheat"
+    }
+]
+
+export const appetizers: MenuItem [] = [
+    {
+        title: "Oysters On the Half Shell",
+        description: "Served iced cold!"
+    },
+    {
+        title: "Crab Cakes Covington",
+        description: "Fried crab cakes topped with remoulade, crabmeat, tomato & corn relish"
+    },
+    {
+        title: "Zydeco Mushrooms",
+        description: "Seafood stuffed and baked mushroom caps with parmesan cheese and lemon butter"
+    },
+    {
+        title: "Bayou Bleus Asparagus Spears",
+        description: "Lightly fried, bleu cheese dipping sauce"
+    },
+    {
+        title: "Ahi Tuna",
+        description: "Sesame crusted and seared rare, set with wakame seaweed salad and garnished with wasabi and soy syrup"
+    },
+    {
+        title: "Cajun Arancini",
+        description: "Cracklin crusted boudin, set with mirliton slaw, citrus horseradish aioli & tabasco honey"
+    },
+    {
+        title: "Eggplant Camellia",
+        description: "Lightly fried medallions, jumbo lump crabmeat, dill hollandaise"
+    },
+    {
+        title: "Acadiana Egg-rolls",
+        description: "Three shrimp & duck egg-rolls served in sweet & sour sauce with Asian mustard"
+    },
+    {
+        title: "Colossal Shrimp Cocktail",
+        description: "Jumbo Gulf shrimp with spicy cocktail sauce"
+    }
+];
+
+export const dinnerSoupsAndSalads: MenuItem[] = [
+    {
+        title: "Sensation Salad",
+        description: "Iceberg lettuce, grape tomatoes, kalamata olives, & toasted almonds sensation dressing"
+    },
+    {
+        title: "Marinated Seafood Salad",
+        description: "Jumbo lump crabmeat, shrimp, celery & tomatoes, mixed greens"
+    },
+    {
+        title: "Warm Crawfish",
+        description: "Fried tails, fresh spinach, crisp bacon, honey mustard dressing"
+    },
+    {
+        title: "House Salad",
+        description: "Mixed greens, red onions, tomatoes, croutons with choice of dressing"
+    },
+    {
+        title: "Caesar Salad",
+        description: "Romaine lettuce tossed with a classic Parmesan dressing, fresh croutons"
+    },
+    {
+        title: "Napa Salad",
+        description: "Spinach, grapes, apples, spiced pecans, bleu cheese, pinot noir dressing. Add Marinated Chicken or Jumbo Gulf Shrimp"
+    }
+];
+export const dinnerSeafood: MenuItem [] = [
+    {
+        title: "Cedar-Roasted Redfish",
+        description: "Plank-roasted fillet with creole lemon caper butter. Add Jumbo Lump Crabmeat, Jumbo Sautéed Shrimp, or Fried Oysters"
+    },
+    {
+        title: "Ultimate Alfredeaux",
+        description: "Gulf shrimp, lump crabmeat & crawfish tossed in Romano cream"
+    },
+    {
+        title: "Fresh 'Visiting' Fish",
+        description: "Pan seared selections, beurre blanc finish. Add A'la Orleans - traditional New Orleans BBQ Shrimp or A'la Cocodrie - lump crabmeat, Crimini mushrooms and scallions"
+    },
+    {
+        title: "Shrimp & Grits",
+        description: "Jumbo shrimp with Abita Amber & andouille cream sauce"
+    },
+    {
+        title: "Pasta Chandel",
+        description: "Linguine pasta tossed with Mediterranean vegetables, finished with pesto & crumbled feta"
+    },
+    {
+        title: "Shrimp Vacherie",
+        description: "Two seafood stuffed gulf shrimp fried and served with creolaise"
+    }
+];
+
+export const dinnerMeats: MenuItem [] = [
+    {
+        title: "Veal Oscar",
+        description: "Panéed trio medallions, jumbo lump crabmeat & asparagus, sauce béarnaise "
+    },
+    {
+        title: 'Duck Mansur',
+        description: "Roasted boneless duckling topped with a Chambord blackberry sauce"
+    },
+    {
+        title: "Steak & East Coast Lobster",
+        description: "Petite- 8 oz. filet & 5 oz. lobster tail   Grand- 8 oz. filet & two 5 oz. tails"
+    },
+    {
+        title: "Creole Chicken Piccata",
+        description: "Panéed breast, Crimini mushrooms, capers & lemon butter sauce"
+    },
+    {
+        title: "8 OZ. Filet Mignon",
+        description: "Seasoned & char grilled to perfection, a classic delight"
+    }
+]
+
+export const Sides: MenuItem [] = [
+    {
+        title: "Pepper Jack Spinach Madeline",
+        description: ""
+    },
+    {
+        title: "Stone Ground Grits",
+        description:""
+    },
+    {
+        title: "Asparagus w/ Hollandaise",
+        description: ""
+    },
+    {
+        title: "Sauteed Crimini Mushrooms",
+        description: ""
+    },
+    {
+        title: "Parmesan Risotto",
+        description: ""
+    },
+    {
+        title: "Steak House or Sweet Potato Fries",
+        description: ""
+    },
+    {
+        title: "Sauteed Broccoli",
+        description: ""
+    },
+    {
+        title: "Smoked Gouda Mac & Cheese",
+        description:""
+    }
+];
+
+export const brunch: MenuItem[] = [
+    {
+        title: "Eggs Benedict",
+        description: "Poached eggs, Canadian bacon, English muffin, hollandaise, & roasted tomato marmalade.  Choice of fruit or grits"
+    },
+    {
+        title: "Eggs Florentine",
+        description: "English muffin topped with poached eggs and creamed spinach, finished with hollandaise sauce.  Choice of fruit or grits"
+    },
+    {
+        title: "Ultimate Omelette",
+        description: "Lump crabmeat, shrimp, crawfish, & pepper jack mornay. Choice of fruit or grits"
+    },
+    {
+        title: "Brunch Cheeseburger",
+        description: "Twin patties of brisket & chuck blend on brioche bun, topped with fried egg, applewood smoked bacon, cheddar.  Lettuce, tomato, pickle on side. Served with steak house fries"
+    },
+    {
+        title: "Eggs Royale",
+        description: "English muffin topped with poached eggs and filet medallions, finished with Bearnaise sauce.  Choice of fruit or grits"
+    },
+    {
+        title: "Boulevard Brunch",
+        description: "Poached eggs set on crab cakes & English muffins, Remoulade.  Choice of fruit or grits"
+    },
+    {
+        title: "Grits & Grillades",
+        description: "Sautéed medallions over stone ground grits, topped with peppercorn pan gravy"
+    }
+];
+
+export const desserts: MenuItem[] = [
+    {
+        title: "Try our 'Bean Me Up' martini following dinner!",
+        description: "Made with fresh brewed & chilled espresso!"
+    },
+    {
+        title: "Bread Pudding",
+        description: "Baked with fresh blueberries, raisins, and Grand Marnier caramel"
+    },
+    {
+        title: "Bailey's Cheesecake Chantilly",
+        description: "Chocolate chips & Irish cream chantilly sauce"
+    },
+    {
+        title: "Mocha Chocolate Cake",
+        description: "Coffee infused chocolate cake with hazelnut chocolate drizzle.  Served with a petite scoop of vanilla ice cream."
+    },
+    {
+        title: "Seasonal Berries Anglaise",
+        description: "Fresh berries laced with English cream"
+    },
+    {
+        title: "Mixed Berry Cheesecake",
+        description: "Raspberry sauce & macerated berries"
+    },
+    {
+        title: "Turtle Cheesecake",
+        description: "Chocolate chip, caramel, & spiced candied pecans"
+    }
 ]

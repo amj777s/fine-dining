@@ -12,6 +12,7 @@ export const useWindowSize = () => {
 
 export const useIsVisible = (ref:any) => {
     const [isIntersecting, setIntersection] = useState(false);
+    
 
     useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
@@ -21,6 +22,7 @@ export const useIsVisible = (ref:any) => {
         
         observer.observe(ref.current);
         return () => {
+            
           observer.disconnect();
         };
       }, [ref]);

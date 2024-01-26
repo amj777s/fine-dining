@@ -15,7 +15,8 @@ const config: Config = {
         'knife': "url('../../public/images/knife.png')",
         'drink': "url('../../public/images/drink.png')",
         'chef': "url('../../public/images/chef.png')",
-        'award': "url('../../public/images/awardImage.jpg')"
+        'award': "url('../../public/images/awardImage.jpg')",
+        'menuBg': "url('../../public/images/menuBg.jpg')"
       },
       spacing: {
         '1/10': "10%",
