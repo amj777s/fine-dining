@@ -8,14 +8,14 @@ import { Sides, appetizers, brunch, desserts, dinnerMeats, dinnerSeafood, dinner
 
 export default function Menu() {
 
-    const lunchTitle = useRef(null);
-    const dinnerTitle = useRef(null);
-    const brunchTitle = useRef(null);
-    const dessertTitle = useRef(null);
+    const lunchTitle = useRef<HTMLHeadingElement | null>(null);
+    const dinnerTitle = useRef<HTMLHeadingElement | null>(null);
+    const brunchTitle = useRef<HTMLHeadingElement | null>(null);
+    const dessertTitle = useRef<HTMLHeadingElement | null>(null);
 
 
     const handleScrollToMenu = (menu: string) => {
-        let node: HTMLHeadingElement;
+        let node: HTMLHeadingElement | null;
         
         switch (menu) {
             case "Lunch":
@@ -30,14 +30,20 @@ export default function Menu() {
             case "Dessert":
                 node = dessertTitle.current
                 break;
+            
+            default:
+                node = null
 
         }
-
-        node.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-            inline: 'nearest'
-        });
+        
+        if(node){
+            node.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+                inline: 'nearest'
+            });
+        }
+        
     }
     return (
         <div className=" scrollbar flex flex-col overflow-y-scroll w-full h-full p-3 gap-16 bg-black ">
