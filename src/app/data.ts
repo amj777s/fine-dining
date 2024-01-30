@@ -1,4 +1,4 @@
-import { Cocktail, Drink, ImageInfo, LaurelType, MenuItem } from "./types";
+import { Cocktail, Drink, ImageInfo, LaurelType, MenuItem, Event } from "./types";
 
 import apricotSoup from '../../public/images/apricotSoup.jpg';
 import beefWellington from '../../public/images/beefWellington.jpg';
@@ -372,4 +372,67 @@ export const desserts: MenuItem[] = [
         title: "Turtle Cheesecake",
         description: "Chocolate chip, caramel, & spiced candied pecans"
     }
-]
+];
+
+export const events: Event [] = [
+    {
+        name: 'KIRK HOLDER',
+        date: "Wednesday January 31st",
+        description: "Live music on the patio!",
+        time: "06:30 PM - 09:30 PM"
+    },
+    {
+        name: 'MIKE HOGAN',
+        date: "Thursday February 1st",
+        description: "Live music on the patio!",
+        time: "06:30 PM - 09:30 PM"
+    },
+    {
+        name: 'CYNDER ROAD DUO',
+        date: "Friday February 2nd",
+        description: "Live music on the patio!",
+        time: "07:00 PM - 10:00 PM"
+    },
+    {
+        name: 'DAMON KIN & BO JAMISON',
+        date: "Saturday February 3rd",
+        description: "Live music on the patio!",
+        time: "07:00 PM - 10:00 PM"
+    },
+    {
+        name: 'HEATH RANSONNET',
+        date: "Thursday February 8th",
+        description: "Live music on the patio!",
+        time: "06:30 PM - 09:30 PM"
+    },
+    {
+        name: 'CHRIS OCMAND',
+        date: "Thursday February 8th",
+        description: "Standup special on the patio!",
+        time: "06:30 PM - 09:30 PM"
+    },
+    {
+        name: 'CHRIS LEBLANC',
+        date: "Thursday February 8th",
+        description: "Live music on the patio!",
+        time: "07:00 PM - 10:00 PM"
+    },
+    {
+        name: 'CHRIS ALLEN',
+        date: "Thursday February 22nd",
+        description: "Live music on the patio!",
+        time: "06:30 PM - 09:30 PM"
+    },
+    {
+        name: 'PRESS "1" TRIO',
+        date: "Friday February 23rd",
+        description: "Standup special on the patio!",
+        time: "07:00 PM - 10:00 PM"
+    },
+    {
+        name: 'IAN & JARRETT',
+        date: "Friday February 23rd",
+        description: "Live music on the patio!",
+        time: "06:30 PM - 09:30 PM"
+    }
+];

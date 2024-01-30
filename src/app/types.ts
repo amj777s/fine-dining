@@ -32,3 +32,10 @@ export type ImageInfo = {
     source: StaticImageData,
     name: string
 }
+
+export type Event = {
+    name: string,
+    date: string,
+    description: string,
+    time: string
+}

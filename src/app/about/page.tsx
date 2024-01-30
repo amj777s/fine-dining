@@ -34,9 +34,6 @@ export default function About() {
     const staffAnimation = staffVisible? visibleTransisitionRight: hideRight;
 
 
-
-    
-
     return (
         <div className="scrollbar flex flex-col overflow-y-scroll w-full h-full  p-3 bg-black overflow-x-hidden text-lg">
             <NavBar />
@@ -64,8 +61,7 @@ export default function About() {
                         src={maya}
                         alt="bottle of wine"
                         sizes="100vw"
-                        className="w-full sm:w-1/2 h-auto mb-2  sm:float-left sm:mr-2"
-                        />
+                        className="w-full sm:w-1/2 h-auto mb-2  sm:float-left sm:mr-2" />
                     <p className="mb-8">Outfitted with a mahogany bar, high top, and low top tables, the bar offers a full-service food and wait staff. Customers can enjoy special appetizers such as Char-Grilled Oysters shucked and prepared before their eyes. Extensive wine and martini menus offer balance and appeal to all at the fully stocked bar. Mansurs on the Boulevard has won the Award of Excellence from Wine Spectator Magazine every year since 1995.</p>
                     <p>Quality and consistency are key ingredients to the restaurant's success. Regular diners may face a dilemma at the end of their meal when the question is whether to order a favorite dessert, such as Bread Pudding or Louisiana Lust or try a tempting after-dinner beverage from our fine array of choices.</p>
                 </div>
@@ -77,8 +73,7 @@ export default function About() {
                     src={dinningRoom}
                     alt="dining room Table"
                     sizes="100vw"
-                    className="w-full  sm:w-1/2 h-auto mb-2  sm:float-right sm:ml-2"
-                />
+                    className="w-full  sm:w-1/2 h-auto mb-2  sm:float-right sm:ml-2" />
                 <p className="mb-8">From the main dining room with our Live Pianist to private rooms which can be booked for business meetings and family events, to the bar area perfect for a quick bite and a cocktail before a show, Mansurs on the Boulevard offers high caliber food and service that keeps its customers coming back for more.</p>
                 <p>The dress Code is "Business Casual" mostly aimed toward gentlemen.  We ask that all men please remove any and all ball caps upon entering, refrain from wearing any shorts, sleeveless shirts, or sandals in the dining room.  Special circumstances and game days we are more accomodating and susceptible to fewer restrictions. Please call about dress code information or if you have any questions.</p>
             </div>
@@ -89,14 +84,12 @@ export default function About() {
                     src={manager}
                     alt="manager"
                     sizes="100vw"
-                    className="w-full  sm:w-1/2 h-auto mb-2  sm:float-left sm:mr-2  "
-                />
+                    className="w-full  sm:w-1/2 h-auto mb-2  sm:float-left sm:mr-2  "/>
                 <Image 
                     src={managers}
                     alt="manager"
                     sizes="100vw"
-                    className="w-full  sm:w-1/2 h-auto mb-2  sm:float-left sm:mr-2"
-                />
+                    className="w-full  sm:w-1/2 h-auto mb-2  sm:float-left sm:mr-2" />
                 <p className="mb-8">Founded in 1989, Chef Tim Kringle is the original owner.  Dining Room, Catering, and Marketing Specialists, Justin McDonald and Brandon McDonald, and Partner and Chef Charles Taucer IV, are operating partners.  All of the chefs, managers, and partners have worked their way up through the ranks. </p>
                 <p className="mb-8">Executive Chef Barrett Meeks, a native of Baton Rouge, developed a passion for food at the early age of 8, when he was lucky enough to be brought into the kitchen of John Folse at Lafitte's Landing Restaurant to see how a dessert was plated. While at LSU, Barrett studied history but eventually fell in love with working in the kitchen and decided to enroll at Louisiana Culinary Institute. Chef Barrett uses his creativity, along with the array of bountiful produce and seafood that Louisiana has to offer, to create one brilliant dish after another and will forever be in pursuit of the perfect bite. Sous Chefs Jeremy Campbell and Tyler Bates run the day to day kitchen operations, working hand in hand with our talented kitchen staff to prepare and serve the best cuisine Baton Rouge has to offer!</p>
                 <p>Our Management staff is led by General Manager, Derrick Davis.  The team includes Service Manager Moe Wilson Jr., Wine Director Ryan Fitzgerald, and Bar Manager Isabella Holder.  They work together with the kitchen staff, bartenders, servers, hostesses, and server assistants to provide guests with an unforgettable dining experience. </p>

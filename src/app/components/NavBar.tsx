@@ -30,15 +30,15 @@ export default function NavBar() {
                 <Link href='/' className=" transition-colors duration-500 hover:text-yellow-400">Home</Link>
                 <Link href='/about' className=" transition-colors duration-500 hover:text-yellow-400">About</Link>
                 <Link href='/menu' className=" transition-colors duration-500 hover:text-yellow-400">Menu</Link>
-                <Link href='/rewards' className=" transition-colors duration-500 hover:text-yellow-400">Rewards</Link>
+                <Link href='/events' className=" transition-colors duration-500 hover:text-yellow-400">Events</Link>
             </div>
             <MdMenu className=" sm:hidden text-4xl" onClick={toggleDropMenu} />
             <div className={`${optionsDisplay} text-4xl z-50 fixed w-full h-full top-0 left-0 bg-black`}>
                 <MdOutlineRestaurantMenu className=" float-right mt-2 mr-2" onClick={toggleDropMenu} />
-                <Link className="block ml-2 mt-2 mb-2" href='/'>Home</Link>
-                <Link className="block ml-2 mb-2" href='/about'>About</Link>
-                <Link className="block ml-2 mb-2" href='/menu'>Menu</Link>
-                <Link className="block ml-2 mb-2" href='/rewards'>Rewards</Link>
+                <Link className="block ml-2 mt-2 mb-2 text-left" href='/'>Home</Link>
+                <Link className="block ml-2 mb-2 text-left" href='/about'>About</Link>
+                <Link className="block ml-2 mb-2 text-left" href='/menu'>Menu</Link>
+                <Link className="block ml-2 mb-2 text-left" href='/events'>Events</Link>
             </div>
         </nav>
     )

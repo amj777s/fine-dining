@@ -2,6 +2,7 @@
 import { useRef } from "react";
 import { useIsVisible } from "../hooks";
 import { FaSpoon } from "react-icons/fa6";
+import Link from "next/link";
 
 export default function History() {
 
@@ -19,7 +20,7 @@ export default function History() {
                     Regular diners may face a dilemma at the end of their meal when the question
                     is whether to order a favorite dessert, such as Bread Pudding or Louisiana Lust
                     or try a tempting after-dinner beverage from our fine array of choices.</p>
-                <button className="transition-colors duration-700 w-1/2 max-w-60 m-auto rounded-sm border-4  border-slate-100 hover:border-yellow-400">Learn More</button>
+                <Link href='/about' className="transition-colors duration-700 w-1/2 max-w-60 m-auto text-center rounded-sm border-4  border-slate-100 hover:border-yellow-400">Learn More</Link>
             </div>
 
             <div className=" w-full h-24 md:w-60 md:h-60 md:-rotate-90 bg-knife bg-contain bg-no-repeat bg-center"></div>
